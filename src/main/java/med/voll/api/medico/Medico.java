@@ -9,7 +9,7 @@ import med.voll.api.endereco.Endereco;
 
 
 @Table(name = "medicos")
-@Entity(name = "medico")
+@Entity(name = "Medico")
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
@@ -33,6 +33,9 @@ public class Medico {
         this.email = dados.email();
         this.crm = dados.crm();
         this.especialidade = dados.especialidade();
+
+        System.out.println("Endereco " + dados.enderenco());
+
         this.endereco= new Endereco(dados.enderenco());
     }
 }

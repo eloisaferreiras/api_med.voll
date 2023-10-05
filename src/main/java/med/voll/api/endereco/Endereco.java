@@ -20,6 +20,7 @@ public class Endereco {
     private String uf;
 
     public Endereco(DadosEnderenco dados) {
+        //this.logradouro = dados.logradouro();
         this.logradouro = dados.logradouro();
         this.bairro = dados.bairro();
         this.cep = dados.cep();
