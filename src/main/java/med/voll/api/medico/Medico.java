@@ -10,9 +10,9 @@ import med.voll.api.endereco.Endereco;
 
 @Table(name = "medicos")
 @Entity(name = "Medico")
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
+@Getter //gera automaticamente os métodos getters para todos os atributos de uma classe,
+@NoArgsConstructor // é um construtor vazio que não recebe parâmetros
+@AllArgsConstructor //gera automaticamente um construtor com todos os argumentos para uma classe, evitando a necessidade de escrever manualmente o construtor.
 @EqualsAndHashCode(of = "id")
 public class Medico {
 
@@ -29,6 +29,7 @@ public class Medico {
 
     @Embedded
     private Endereco endereco;
+   // private Endereco endereco;
 
     private boolean ativo;
 

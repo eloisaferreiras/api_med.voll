@@ -28,7 +28,7 @@ public class MedicoController {
 
     @GetMapping // metodo de leitura, apenas carregando dados do banco de dados
     public Page<DadosListagemMedico> listar( @PageableDefault(size = 10, sort = {"nome"}) Pageable paginacao) {
-        return repository.findAll(paginacao).map(DadosListagemMedico::new);
+        return repository.findAllByActiveTrue(paginacao).map(DadosListagemMedico::new);
         // o List representa uma coleção ordenada de elementos. fornece métodos para adicionar, remover, acessar e manipular os elementos da lista.(CRUD).
     }
 
@@ -45,6 +45,7 @@ public class MedicoController {
     public void excluir(@PathVariable Long id) {
         var medico = repository.getReferenceById(id);
         medico.excluir();
+
     }
 
 
