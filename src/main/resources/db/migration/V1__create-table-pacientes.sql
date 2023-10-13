@@ -17,3 +17,4 @@ create table pacientes (
     primary key (id)
 
 );
+
