@@ -11,7 +11,7 @@ create table pacientes (
     bairro varchar(100) not null,
     cidade varchar (100) not null,
     uf char(2) not null,
-    cep varchar(9) not null,
+    cep varchar(9) not null
 
 
     primary key (id)
