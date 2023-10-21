@@ -3,7 +3,7 @@ package med.voll.api.domain.endereco;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 
-public record DadosEnderenco(
+public record DadosEndereco(
 
         @NotBlank
 
