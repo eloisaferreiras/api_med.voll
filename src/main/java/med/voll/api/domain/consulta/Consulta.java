@@ -3,6 +3,8 @@ package med.voll.api.domain.consulta;
 import jakarta.persistence.*;
 import lombok.*;
 import med.voll.api.domain.medico.Medico;
+import med.voll.api.controller.Paciente;
+
 import java.time.LocalDateTime;
 
 
@@ -26,5 +28,8 @@ import java.time.LocalDateTime;
         @JoinColumn(name = "paciente_id")
 
         private LocalDateTime data;
+
+    public Consulta(Object id, Medico medico, Paciente paciente, LocalDateTime data) {
     }
+}
 
