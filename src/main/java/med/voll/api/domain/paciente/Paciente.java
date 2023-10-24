@@ -1,4 +1,4 @@
-package med.voll.api.controller;
+package med.voll.api.domain.paciente;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import med.voll.api.domain.endereco.Endereco;
 import med.voll.api.domain.paciente.DadosAtualizacaoPaciente;
 import med.voll.api.domain.paciente.DadosCadastroPaciente;
+
 
 @Table(name = "pacientes")
 @Entity(name = "Paciente")
